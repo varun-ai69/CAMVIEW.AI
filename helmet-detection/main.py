@@ -26,7 +26,6 @@ plate_detector = PlateDetector("models/license_plate.pt")
 ocr = PlateOCR()
 report_manager = HelmetReportManager("reports")
 
-# Track only PERSONS
 person_tracker = Sort(max_age=15, min_hits=3, iou_threshold=0.3)
 
 # Store already violated IDs
